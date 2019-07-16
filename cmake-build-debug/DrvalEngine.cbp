@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="DrvalEngine"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DrvalEngine">
+				<Option output="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/cmake-build-debug/DrvalEngine.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 DrvalEngine"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DrvalEngine/fast">
+				<Option output="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/cmake-build-debug/DrvalEngine.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 DrvalEngine/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\dariusz.cabala\CLionProjects\DrvalEngine\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/Model/Groups.cpp">
+			<Option target="DrvalEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/Model/Groups.h">
+			<Option target="DrvalEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/Model/Hours.cpp">
+			<Option target="DrvalEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/Model/Hours.h">
+			<Option target="DrvalEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/Model/Instructors.cpp">
+			<Option target="DrvalEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/Model/Instructors.h">
+			<Option target="DrvalEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/Model/Plan.cpp">
+			<Option target="DrvalEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/Model/Plan.h">
+			<Option target="DrvalEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/Model/Rooms.cpp">
+			<Option target="DrvalEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/Model/Rooms.h">
+			<Option target="DrvalEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/Model/Subjects.cpp">
+			<Option target="DrvalEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/Model/Subjects.h">
+			<Option target="DrvalEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/Utilities/SuperUtilities.cpp">
+			<Option target="DrvalEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/Utilities/SuperUtilities.h">
+			<Option target="DrvalEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/main.cpp">
+			<Option target="DrvalEngine"/>
+		</Unit>
+		<Unit filename="C:/Users/dariusz.cabala/CLionProjects/DrvalEngine/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
