@@ -13,20 +13,42 @@ void Rooms::setNumber(const string &number) {
     Rooms::number = number;
 }
 
-const string &Rooms::getMainType() const {
+const SubjectType &Rooms::getMainType() const {
     return mainType;
 }
 
 void Rooms::setMainType(const string &mainType) {
-    Rooms::mainType = mainType;
+    if(mainType=="LAB")
+        Rooms::mainType = LAB;
+    else if(mainType=="EXE")
+        Rooms::mainType = EXE;
+    else if(mainType=="LEC")
+        Rooms::mainType = LEC;
+    else if(mainType=="CMP")
+        Rooms::mainType = CMP;
+    else if(mainType=="PRO")
+        Rooms::mainType= PRO;
+    else
+        Rooms::mainType=UNKNOWN;
 }
 
-const string &Rooms::getSecondType() const {
+const SubjectType &Rooms::getSecondType() const {
     return secondType;
 }
 
 void Rooms::setSecondType(const string &secondType) {
-    Rooms::secondType = secondType;
+    if(secondType=="LAB")
+        Rooms::secondType = LAB;
+    else if(secondType=="EXE")
+        Rooms::secondType = EXE;
+    else if(secondType=="LEC")
+        Rooms::secondType = LEC;
+    else if(secondType=="CMP")
+        Rooms::secondType = CMP;
+    else if(secondType=="PRO")
+        Rooms::secondType= PRO;
+    else
+        Rooms::secondType=UNKNOWN;
 }
 
 Rooms::Rooms(string csvLine) {
@@ -38,4 +60,8 @@ Rooms::Rooms(string csvLine) {
         }catch (exception e){
             setSecondType("");
         }
+}
+
+Rooms::Rooms() {
+
 }

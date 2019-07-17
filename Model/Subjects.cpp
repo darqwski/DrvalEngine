@@ -82,3 +82,6 @@ Subjects::Subjects(string csvLine) {
 
 
 }
+
+Subjects::Subjects() {
+}

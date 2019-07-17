@@ -10,7 +10,7 @@
 using namespace std;
 class Instructors {
 private:
-    string name,surname,title;
+    string name,surname,title, id;
     int priority;
 public:
     const string &getName() const;
@@ -33,6 +33,7 @@ public:
 
     Instructors(string csvLine);
 
+    bool findByID(string id);
     friend ostream& operator<<(ostream& os, const Instructors& instructors );
 };
 

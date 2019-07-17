@@ -46,6 +46,7 @@ public:
     void setProjects(int projects);
 
     Subjects(string csvLine);
+    Subjects();
 };
 
 

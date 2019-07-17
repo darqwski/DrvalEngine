@@ -4,6 +4,7 @@
 
 #include "Groups.h"
 #include "../Utilities/SuperUtilities.h"
+#include "../Utilities/DrvalUtilities.h"
 
 const string &Groups::getName() const {
     return name;
@@ -21,12 +22,23 @@ void Groups::setStudyField(const string &studyField) {
     Groups::studyField = studyField;
 }
 
-const string &Groups::getGroupType() const {
+const SubjectType &Groups::getGroupType() const {
     return groupType;
 }
 
 void Groups::setGroupType(const string &groupType) {
-    Groups::groupType = groupType;
+    if(groupType=="LAB")
+        Groups::groupType = LAB;
+    else if(groupType=="EXE")
+        Groups::groupType = EXE;
+    else if(groupType=="LEC")
+        Groups::groupType = LEC;
+    else if(groupType=="CMP")
+        Groups::groupType = CMP;
+    else if(groupType=="PRO")
+        Groups::groupType= PRO;
+    else
+        Groups::groupType=UNKNOWN;
 }
 
 int Groups::getYear() const {
@@ -43,4 +55,8 @@ Groups::Groups(string csvLine) {
         setYear(stoi(items.at(1)));
         setStudyField(items.at(2));
         setGroupType(items.at(3));
+}
+
+Groups::Groups() {
+
 }

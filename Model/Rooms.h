@@ -6,25 +6,28 @@
 #define DRVALENGINE_ROOMS_H
 #include <string>
 #include <vector>
+#include "../Utilities/DrvalUtilities.h"
+
 using namespace std;
 class Rooms {
 private:
-    string number,mainType,secondType;
+    string number;
+    SubjectType mainType,secondType;
 public:
     const string &getNumber() const;
 
     void setNumber(const string &number);
 
-    const string &getMainType() const;
+    const SubjectType &getMainType() const;
 
     void setMainType(const string &mainType);
 
-    const string &getSecondType() const;
+    const SubjectType &getSecondType() const;
 
     void setSecondType(const string &secondType);
 
 public:
-
+    Rooms();
     Rooms(string csvLine);
 };
 

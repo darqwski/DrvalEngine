@@ -37,3 +37,7 @@ Hours::Hours(string text, int type) {
     setHour(stoi(hours.at(0)));
     setMinutes(stoi(hours.at(1)));
 }
+
+Hours::Hours() {
+
+}

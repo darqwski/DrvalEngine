@@ -52,7 +52,10 @@ Instructors::Instructors() {
 }
 ostream& operator<<(ostream& os, const Instructors& instructors)
 {
-    os <<instructors.getTitle()<<" "<<instructors.getName()<< " "<< instructors.getSurname();
     return os;
+}
+
+bool Instructors::findByID(string id) {
+    return id==this->id;
 }
 

@@ -7,11 +7,13 @@
 
 #include <string>
 #include <vector>
+#include "../Utilities/DrvalUtilities.h"
 
 using namespace std;
 class Groups {
 private:
-    string name, studyField,groupType;
+    string name, studyField;
+    SubjectType groupType;
     int year;
 public :
     const string &getName() const;
@@ -22,7 +24,7 @@ public :
 
     void setStudyField(const string &studyField);
 
-    const string &getGroupType() const;
+    const SubjectType &getGroupType() const;
 
     void setGroupType(const string &groupType);
 
@@ -31,6 +33,7 @@ public :
     void setYear(int year);
 
     Groups(string csvLine);
+    Groups();
 };
 
 

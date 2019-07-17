@@ -11,6 +11,7 @@
 #include "Hours.h"
 #include "Instructors.h"
 #include "Subjects.h"
+#include "Occurences.h"
 
 using namespace std;
 class Plan {
@@ -19,15 +20,22 @@ class Plan {
     vector<Instructors> instructors;
     vector<Subjects> subjects;
     vector<string> weekDays;
+    vector<Occurences> planMatrix;
+    vector<Groups>groups;
+public:
+    const vector<Groups> &getGroups() const;
+
+    void setGroups(const vector<Groups> &groups);
+
 public:
     Plan(const vector<Rooms> &rooms, const vector<Hours> &hours, const vector<Instructors> &instructors,
-         const vector<Subjects> &subjects, const vector<string> &weekDays);
+         const vector<Subjects> &subjects, const vector<string> &weekDays,const vector<Groups> &groups);
 
 public:
     Plan(const vector<Rooms> &rooms, const vector<Hours> &hours, const vector<Instructors> &instructors,
          const vector<Subjects> &subjects);
 
-    void showEmptyPlan();
+    void showPlan();
 public:
     const vector<Rooms> &getRooms() const;
 
@@ -45,6 +53,18 @@ public:
 
     void setSubjects(const vector<Subjects> &subjects);
 
+    int calculateMinimalWidth();
+
+    string buildHeader(string weekName);
+
+    vector<Occurences>
+    generatePlanMatrix(const std::vector<string> &vector, const std::vector <Hours> &hours, const std::vector <Rooms> &rooms);
+
+    int getRoomDayHourAddress(int room, int day, int hour);
+
+    void fillPlanMatrix(vector<Occurences> vector);
+
+    bool anotherGroupHasClasses(Occurences plan, Occurences occurence);
 };
 
 

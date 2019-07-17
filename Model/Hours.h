@@ -23,6 +23,7 @@ public:
 
     Hours(string text, int type);
 
+    Hours();
 
 private:
     string text;
