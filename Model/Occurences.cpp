@@ -82,7 +82,6 @@ Occurences::Occurences(const Groups &group, const Subjects &subject, SubjectType
     setGroup(group);
     setSubject(subject);
     setSubjectType(subjectType);
-    std:cout<<subject.getName()<<" "<<group.getName()<<endl;
 }
 
 const string &Occurences::getShortSign() const {

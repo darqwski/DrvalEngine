@@ -22,6 +22,8 @@ class Plan {
     vector<string> weekDays;
     vector<Occurences> planMatrix;
     vector<Groups>groups;
+    vector<Leadings>leadings;
+    ;
 public:
     const vector<Groups> &getGroups() const;
 
@@ -29,7 +31,7 @@ public:
 
 public:
     Plan(const vector<Rooms> &rooms, const vector<Hours> &hours, const vector<Instructors> &instructors,
-         const vector<Subjects> &subjects, const vector<string> &weekDays,const vector<Groups> &groups);
+         const vector<Subjects> &subjects, const vector<string> &weekDays,const vector<Groups> &groups,const vector<Leadings> &leadings);
 
 public:
     Plan(const vector<Rooms> &rooms, const vector<Hours> &hours, const vector<Instructors> &instructors,
@@ -65,6 +67,10 @@ public:
     void fillPlanMatrix(vector<Occurences> vector);
 
     bool anotherGroupHasClasses(Occurences plan, Occurences occurence);
+
+    int availableInstructor(Occurences plan, Occurences occurence);
+
+    bool isInstructorFreeAtHour(Instructors instructor, int hour, int day);
 };
 
 

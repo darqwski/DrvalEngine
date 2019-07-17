@@ -47,6 +47,9 @@ public:
 
     Subjects(string csvLine);
     Subjects();
+
+    friend bool operator==(const Subjects& s1, const Subjects& s2);
+
 };
 
 

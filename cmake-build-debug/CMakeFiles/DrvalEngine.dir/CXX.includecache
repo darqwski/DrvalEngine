@@ -6,91 +6,85 @@
 
 #IncludeRegexTransform: 
 
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Groups.h
+C:/Projects/DrvalEngine/Model/Groups.h
 string
 -
 vector
 -
 ../Utilities/DrvalUtilities.h
-/Users/generalautomatic/Desktop/DrvalEngine/Utilities/DrvalUtilities.h
+C:/Projects/DrvalEngine/Utilities/DrvalUtilities.h
 
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Hours.h
+C:/Projects/DrvalEngine/Model/Hours.h
 string
 -
 
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Instructors.h
+C:/Projects/DrvalEngine/Model/Instructors.h
 string
 -
 vector
 -
 
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Leadings.h
+C:/Projects/DrvalEngine/Model/Leadings.h
 Instructors.h
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Instructors.h
+C:/Projects/DrvalEngine/Model/Instructors.h
 ../Utilities/DrvalUtilities.h
-/Users/generalautomatic/Desktop/DrvalEngine/Utilities/DrvalUtilities.h
+C:/Projects/DrvalEngine/Utilities/DrvalUtilities.h
 Subjects.h
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Subjects.h
+C:/Projects/DrvalEngine/Model/Subjects.h
 
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Occurences.cpp
-iostream
--
-Occurences.h
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Occurences.h
-
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Occurences.h
+C:/Projects/DrvalEngine/Model/Occurences.h
 Subjects.h
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Subjects.h
+C:/Projects/DrvalEngine/Model/Subjects.h
 ../Utilities/DrvalUtilities.h
-/Users/generalautomatic/Desktop/DrvalEngine/Utilities/DrvalUtilities.h
+C:/Projects/DrvalEngine/Utilities/DrvalUtilities.h
 Rooms.h
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Rooms.h
+C:/Projects/DrvalEngine/Model/Rooms.h
 Hours.h
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Hours.h
+C:/Projects/DrvalEngine/Model/Hours.h
 Groups.h
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Groups.h
+C:/Projects/DrvalEngine/Model/Groups.h
 Leadings.h
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Leadings.h
+C:/Projects/DrvalEngine/Model/Leadings.h
 
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Plan.cpp
+C:/Projects/DrvalEngine/Model/Plan.cpp
 iostream
 -
 Plan.h
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Plan.h
+C:/Projects/DrvalEngine/Model/Plan.h
 vector
 -
 
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Plan.h
+C:/Projects/DrvalEngine/Model/Plan.h
 string
 -
 vector
 -
 Rooms.h
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Rooms.h
+C:/Projects/DrvalEngine/Model/Rooms.h
 Hours.h
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Hours.h
+C:/Projects/DrvalEngine/Model/Hours.h
 Instructors.h
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Instructors.h
+C:/Projects/DrvalEngine/Model/Instructors.h
 Subjects.h
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Subjects.h
+C:/Projects/DrvalEngine/Model/Subjects.h
 Occurences.h
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Occurences.h
+C:/Projects/DrvalEngine/Model/Occurences.h
 
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Rooms.h
+C:/Projects/DrvalEngine/Model/Rooms.h
 string
 -
 vector
 -
 ../Utilities/DrvalUtilities.h
-/Users/generalautomatic/Desktop/DrvalEngine/Utilities/DrvalUtilities.h
+C:/Projects/DrvalEngine/Utilities/DrvalUtilities.h
 
-/Users/generalautomatic/Desktop/DrvalEngine/Model/Subjects.h
+C:/Projects/DrvalEngine/Model/Subjects.h
 string
 -
 vector
 -
 
-/Users/generalautomatic/Desktop/DrvalEngine/Utilities/DrvalUtilities.h
+C:/Projects/DrvalEngine/Utilities/DrvalUtilities.h
 string
 -
 

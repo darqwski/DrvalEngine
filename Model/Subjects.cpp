@@ -85,3 +85,10 @@ Subjects::Subjects(string csvLine) {
 
 Subjects::Subjects() {
 }
+
+bool operator==(const Subjects &s1, const Subjects &s2) {
+    if(s1.getName()!=s2.getName())return false;
+    if(s1.getStudyField()!=s2.getStudyField())return false;
+    if(s1.getYear()!=s2.getYear())return false;
+    return true;
+}

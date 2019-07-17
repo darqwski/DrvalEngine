@@ -16,7 +16,7 @@ enum SubjectType{
       LAB,EXE,CMP,LEC,PRO,UNKNOWN
 };
 
-
+string getSubjectTypeString(SubjectType name);
 SubjectType getSubjectType(string name);
 
 class DrvalUtilities {

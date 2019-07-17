@@ -34,6 +34,7 @@ public :
 
     Groups(string csvLine);
     Groups();
+    friend bool operator==(const Groups& g1, const Groups& g2);
 };
 
 

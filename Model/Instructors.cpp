@@ -59,3 +59,11 @@ bool Instructors::findByID(string id) {
     return id==this->id;
 }
 
+bool operator==(const Instructors &g1, const Instructors &g2) {
+    if(g2.getName()!=g1.getName())return false;
+    if(g2.getSurname()!=g1.getSurname())return false;
+    if(g2.getTitle()!=g1.getTitle())return false;
+    if(g2.getPriority()!=g1.getPriority())return false;
+    return true;
+}
+

@@ -17,3 +17,16 @@ SubjectType getSubjectType(string name){
         return PRO;
     return UNKNOWN;
 }
+string getSubjectTypeString(SubjectType name){
+    if(name==LAB)
+        return "LAB";
+    if(name==EXE)
+        return "EXE";
+    if(name==LEC)
+        return  "LEC";
+    if(name==CMP)
+        return "CMP";
+    if(name==PRO)
+        return "PRO";
+    return "UNKNOWN";
+}

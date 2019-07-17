@@ -58,5 +58,13 @@ Groups::Groups(string csvLine) {
 }
 
 Groups::Groups() {
+    Groups::setGroupType("UNKNOWN");
+}
 
+bool operator==(const Groups &g1, const Groups &g2) {
+    if(g2.getName()!=g1.getName())return false;
+    if(g2.getGroupType()!=g1.getGroupType())return false;
+    if(g2.getStudyField()!=g1.getStudyField())return false;
+    if(g2.getYear()!=g1.getYear())return false;
+    return true;
 }

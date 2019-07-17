@@ -35,6 +35,8 @@ public:
 
     bool findByID(string id);
     friend ostream& operator<<(ostream& os, const Instructors& instructors );
+    friend bool operator==(const Instructors& i1, const Instructors& i2);
+
 };
 
 
