@@ -23,9 +23,9 @@ public:
 
     void setSubjectType(SubjectType subjectType);
 
-    const Leadings &getLeading() const;
+    const Leadings getLeading() const;
 
-    void setLeading(const Leadings &leading);
+    void setLeading(const Leadings leading);
 
     const Groups &getGroup() const;
 

@@ -178,7 +178,6 @@ void Plan::setGroups(const vector<Groups> &groups) {
 
 void Plan::fillPlanMatrix(vector<Occurences> occurences) {
     for(int i=0;i<occurences.size();i++){
-        cout<<occurences.at(i).getSubject().getName()<<endl;
         for(int j=0;j<planMatrix.size();j++){
             int availableLeadingIndex = availableInstructor(planMatrix.at(j),occurences.at(i));
             if(planMatrix.at(j).getRoom().getMainType()==occurences.at(i).getSubjectType()
@@ -209,7 +208,8 @@ void Plan::fillPlanMatrix(vector<Occurences> occurences) {
                         planMatrix.at(j).setShortSign("X");
                         break;
                 }
-                planMatrix.at(j).setShortSign(planMatrix.at(j).getShortSign()+leadings.at(availableLeadingIndex).getInstructor().getName().at(0));
+                //planMatrix.at(j).setShortSign(planMatrix.at(j).getShortSign()+leadings.at(availableLeadingIndex).getInstructor().getName().at(0));
+                planMatrix.at(j).setShortSign(planMatrix.at(j).getShortSign()+planMatrix.at(j).getLeading().getInstructor().getName().at(0));
                 showPlan();
                 break;
             }
@@ -229,6 +229,7 @@ int Plan::availableInstructor(Occurences plan, Occurences occurence){
     for(int i=0;i<leadings.size();i++){
         if((leadings.at(i)).getSubject()==occurence.getSubject() && leadings.at(i).getType()==occurence.getGroup().getGroupType()){
             bool isFree=isInstructorFreeAtHour(leadings.at(i).getInstructor(),plan.getWeekDay(),hourNumber);
+            cout<<"IsFree at: "<<plan.getWeekDay()<<"-"<<plan.getRoom().getNumber()<<"-"<<hourNumber<<"?"<<isFree<<endl;
             if(isFree){
                 return i;
             }
@@ -237,8 +238,12 @@ int Plan::availableInstructor(Occurences plan, Occurences occurence){
     return -1;
 }
 bool Plan::isInstructorFreeAtHour(Instructors instructor,int hour, int day){
-
+    cout<<"isInstructorFreeAtHour "<<instructor.getName()<<":"<<hour<<day;
     for(int i=0;i<rooms.size();i++){
+        cout<<"isInstructorFreeAtHour "<<instructor.getName()<<"-"<<rooms.at(i).getNumber()<<"-"<<hour<<day<<"-"<<(getRoomDayHourAddress(i,day,hour))<<
+        /** TODO  Wyglada jakby wyszukiwanie bylo zle*/
+        planMatrix.at(getRoomDayHourAddress(i,day,hour)).getLeading().getInstructor().getName()<<endl;
+
         if((planMatrix.at(getRoomDayHourAddress(i,day,hour))).getLeading().getInstructor()==instructor){
             return false;
         }
@@ -255,15 +260,10 @@ bool Plan::anotherGroupHasClasses(Occurences plan, Occurences occurence){
                 hourNumber=j;break;
         }
         for(int j=0;j<rooms.size();j++){
-            if(
-                    (   planMatrix.at(getRoomDayHourAddress(j,plan.getWeekDay(),hourNumber)).getGroup().getGroupType()!=occurence.getGroup().getGroupType()&&
-                        planMatrix.at(getRoomDayHourAddress(j,plan.getWeekDay(),hourNumber)).getGroup().getGroupType()!=UNKNOWN)
-                    ||
-                    (   (planMatrix.at(getRoomDayHourAddress(j,plan.getWeekDay(),hourNumber)).getGroup() == occurence.getGroup()))
-                    ||
-                    (false)
-                )
-            {
+            Groups currGroup=planMatrix.at(getRoomDayHourAddress(j,plan.getWeekDay(),hourNumber)).getGroup();
+
+            if((currGroup.getGroupType()!=occurence.getGroup().getGroupType()&&currGroup.getGroupType()!=UNKNOWN) ||
+                (currGroup == occurence.getGroup())) {
                   return false;
             }
         }

@@ -21,11 +21,11 @@ void Occurences::setSubjectType(SubjectType subjectType) {
     Occurences::subjectType = subjectType;
 }
 
-const Leadings &Occurences::getLeading() const {
+const Leadings Occurences::getLeading() const {
     return leading;
 }
 
-void Occurences::setLeading(const Leadings &leading) {
+void Occurences::setLeading(const Leadings leading) {
     Occurences::leading = leading;
 }
 
@@ -82,6 +82,8 @@ Occurences::Occurences(const Groups &group, const Subjects &subject, SubjectType
     setGroup(group);
     setSubject(subject);
     setSubjectType(subjectType);
+    setFree(true);
+
 }
 
 const string &Occurences::getShortSign() const {
