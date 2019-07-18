@@ -210,8 +210,10 @@ void Plan::fillPlanMatrix(vector<Occurences> occurences) {
                 }
                 //planMatrix.at(j).setShortSign(planMatrix.at(j).getShortSign()+leadings.at(availableLeadingIndex).getInstructor().getName().at(0));
                 planMatrix.at(j).setShortSign(planMatrix.at(j).getShortSign()+planMatrix.at(j).getLeading().getInstructor().getName().at(0));
-                showPlan();
                 break;
+            }
+            if(j-1==planMatrix.size()){
+                cout<<"Nie ma możliwości dodania "<<occurences.at(i).getGroup().getStudyField()<<" "<<(occurences.at(i)).getGroup().getName()<<" "<<occurences.at(i).getSubject().getName()<<endl;
             }
         }
 
@@ -229,7 +231,6 @@ int Plan::availableInstructor(Occurences plan, Occurences occurence){
     for(int i=0;i<leadings.size();i++){
         if((leadings.at(i)).getSubject()==occurence.getSubject() && leadings.at(i).getType()==occurence.getGroup().getGroupType()){
             bool isFree=isInstructorFreeAtHour(leadings.at(i).getInstructor(),plan.getWeekDay(),hourNumber);
-            cout<<"IsFree at: "<<plan.getWeekDay()<<"-"<<plan.getRoom().getNumber()<<"-"<<hourNumber<<"?"<<isFree<<endl;
             if(isFree){
                 return i;
             }
@@ -237,18 +238,14 @@ int Plan::availableInstructor(Occurences plan, Occurences occurence){
     }
     return -1;
 }
-bool Plan::isInstructorFreeAtHour(Instructors instructor,int hour, int day){
-    cout<<"isInstructorFreeAtHour "<<instructor.getName()<<":"<<hour<<day;
+bool Plan::isInstructorFreeAtHour(Instructors instructor, int day,int hour){
     for(int i=0;i<rooms.size();i++){
-        cout<<"isInstructorFreeAtHour "<<instructor.getName()<<"-"<<rooms.at(i).getNumber()<<"-"<<hour<<day<<"-"<<(getRoomDayHourAddress(i,day,hour))<<
         /** TODO  Wyglada jakby wyszukiwanie bylo zle*/
-        planMatrix.at(getRoomDayHourAddress(i,day,hour)).getLeading().getInstructor().getName()<<endl;
-
         if((planMatrix.at(getRoomDayHourAddress(i,day,hour))).getLeading().getInstructor()==instructor){
             return false;
+
         }
     }
-
     return true;
 }
 bool Plan::anotherGroupHasClasses(Occurences plan, Occurences occurence){
