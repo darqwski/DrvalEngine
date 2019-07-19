@@ -10,7 +10,13 @@ using namespace std;
 
 class Subjects {
 private:
-    string name,studyField;
+    string name,studyField,subjectId;
+public:
+    const string &getSubjectId() const;
+
+    void setSubjectId(const string &subjectId);
+
+private:
     int year,lectures,exercises,laboratories,computers,projects;
 public:
     const string &getName() const;

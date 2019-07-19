@@ -1,0 +1,11 @@
+sdudek;i1mat;EXE
+jpiekosz;i1mat;LEC
+mpawlik;i1fiz;LEC
+mapawlik;i1fiz;EXE
+sdudek;i1mat;EXE
+jstrug;i1wstep;LEC
+pkrol;i1wstep;CMP
+bazior;i1wstep;CMP
+Ikuzminska;i1ang;EXE
+Jpiekosz;e1mat;LEC
+Jpiekosz;e1mat;EXE

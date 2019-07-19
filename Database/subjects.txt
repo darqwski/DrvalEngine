@@ -1,0 +1,6 @@
+i1mat;Matematyka;Informatyka;1;30;30;0;0;0
+i1fiz;Fizyka;Informatyka;1;30;30;0;0;0
+i1wstep;WstepneProgramowanie;Informatyka;1;30;0;0;30;0
+i1ang;Angielski;Informatyka;1;0;30;0;0;0
+i1wf;WF;Informatyka;1;0;30;0;0;0
+e1mat;Matematyka;Elektrotechnika;1;30;30;0;0;0

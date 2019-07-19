@@ -71,14 +71,15 @@ void Subjects::setProjects(int projects) {
 
 Subjects::Subjects(string csvLine) {
     vector<string> items = split(csvLine,";");
-    setName(items.at(0));
-    setStudyField(items.at(1));
-    setYear(stoi(items.at(2)));
-    setLectures(stoi(items.at(3)));
-    setLaboratories(stoi(items.at(4)));
-    setExercises(stoi(items.at(5)));
-    setComputers(stoi(items.at(6)));
-    setProjects(stoi(items.at(7)));
+    setSubjectId(items.at(0));
+    setName(items.at(1));
+    setStudyField(items.at(2));
+    setYear(stoi(items.at(3)));
+    setLectures(stoi(items.at(4)));
+    setLaboratories(stoi(items.at(5)));
+    setExercises(stoi(items.at(6)));
+    setComputers(stoi(items.at(7)));
+    setProjects(stoi(items.at(8)));
 
 
 }
@@ -91,4 +92,12 @@ bool operator==(const Subjects &s1, const Subjects &s2) {
     if(s1.getStudyField()!=s2.getStudyField())return false;
     if(s1.getYear()!=s2.getYear())return false;
     return true;
+}
+
+const string &Subjects::getSubjectId() const {
+    return subjectId;
+}
+
+void Subjects::setSubjectId(const string &subjectId) {
+    Subjects::subjectId = subjectId;
 }

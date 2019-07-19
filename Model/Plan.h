@@ -71,6 +71,8 @@ public:
     int availableInstructor(Occurences plan, Occurences occurence);
 
     bool isInstructorFreeAtHour(Instructors instructor, int hour, int day);
+
+    vector<Occurences> generateOccurences();
 };
 
 

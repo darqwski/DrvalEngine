@@ -11,6 +11,12 @@ using namespace std;
 class Instructors {
 private:
     string name,surname,title, id;
+public:
+    const string &getId() const;
+
+    void setId(const string &id);
+
+private:
     int priority;
 public:
     const string &getName() const;

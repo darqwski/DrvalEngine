@@ -1,0 +1,16 @@
+1i;1;Informatyka;LEC
+11i;1;Informatyka;EXE
+12i;1;Informatyka;EXE
+13i;1;Informatyka;EXE
+1lab1i;1;Informatyka;LAB
+1lab2i;1;Informatyka;LAB
+1lab3i;1;Informatyka;LAB
+1lab4i;1;Informatyka;LAB
+1lab5i;1;Informatyka;LAB
+1cmp1i;1;Informatyka;CMP
+1cmp2i;1;Informatyka;CMP
+1cmp3i;1;Informatyka;CMP
+1cmp4i;1;Informatyka;CMP
+1cmp5i;1;Informatyka;CMP
+1i;1;Elektrotechnika;LEC
+11i;1;Elektrotechnika;EXE

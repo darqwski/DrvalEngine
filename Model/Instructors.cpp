@@ -41,10 +41,12 @@ void Instructors::setPriority(int priority) {
 
 Instructors::Instructors(string csvLine) {
     vector<string> items = split(csvLine,";");
-    setName(items.at(0));
-    setSurname(items.at(1));
-    setTitle(items.at(2));
-    setPriority(stoi(items.at(3)));
+
+    setId(items.at(0));
+    setName(items.at(1));
+    setSurname(items.at(2));
+    setTitle(items.at(3));
+    setPriority(stoi(items.at(4)));
 }
 
 Instructors::Instructors() {
@@ -65,5 +67,13 @@ bool operator==(const Instructors &g1, const Instructors &g2) {
     if(g2.getTitle()!=g1.getTitle())return false;
     if(g2.getPriority()!=g1.getPriority())return false;
     return true;
+}
+
+const string &Instructors::getId() const {
+    return id;
+}
+
+void Instructors::setId(const string &id) {
+    Instructors::id = id;
 }
 

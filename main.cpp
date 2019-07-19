@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <fstream>
 #include "Model/Instructors.h"
 #include "Model/Groups.h"
 #include "Model/Subjects.h"
@@ -66,44 +67,42 @@ void initializeGroups(){
     planGroups.push_back(Groups(("1i;1;Elektrotechnika;LEC")));
     planGroups.push_back(Groups(("11i;1;Elektrotechnika;EXE")));
 }
-void initializeSubjects(){
-    planSubjects.push_back(Subjects(("Matematyka;Elektrotechnika;1;30;30;0;0;0")));
-    planSubjects.push_back(Subjects(("Matematyka;Informatyka;1;30;30;0;0;0")));
-    planSubjects.push_back(Subjects(("Fizyka;Informatyka;1;30;30;0;0;0")));
-    planSubjects.push_back(Subjects(("Elektrotechnika;Informatyka;1;30;30;30;0;0")));
-    planSubjects.push_back(Subjects(("Grafika Komputerowa;Informatyka;1;30;30;30;0;0")));
+void initializeEvery(string address,const int type){
+    ifstream file(address);
+    if (file.is_open()) {
+        string line;
+        while (getline(file, line)) {
+            switch (type){
+                case 0:
+                    planInstructors.push_back(Instructors((line)));
+                    break;
+                case 1:
+                    planRooms.push_back(Rooms((line)));
+                    break;
+                case 2:
+                    planGroups.push_back(Groups((line)));
+                    break;
+                case 3:
+                    planLeadings.push_back(Leadings((line)));
+                    break;
+                case 4:
+                    planSubjects.push_back(Subjects((line)));
+                    break;
+
+            }
+        }
+        file.close();
+    }
 }
-void initializeLeadings(){
-    planLeadings.push_back(Leadings(planInstructors.at(3),LEC,planSubjects.at(1)));
-    planLeadings.push_back(Leadings(planInstructors.at(4),EXE,planSubjects.at(1)));
-    planLeadings.push_back(Leadings(planInstructors.at(3),EXE,planSubjects.at(1)));
-    planLeadings.push_back(Leadings(planInstructors.at(6),EXE,planSubjects.at(2)));
-    planLeadings.push_back(Leadings(planInstructors.at(6),LEC,planSubjects.at(2)));
-    planLeadings.push_back(Leadings(planInstructors.at(0),LEC,planSubjects.at(3)));
-    planLeadings.push_back(Leadings(planInstructors.at(1),EXE,planSubjects.at(3)));
-    planLeadings.push_back(Leadings(planInstructors.at(4),LAB,planSubjects.at(3)));
-    planLeadings.push_back(Leadings(planInstructors.at(5),EXE,planSubjects.at(4)));
-    planLeadings.push_back(Leadings(planInstructors.at(5),CMP,planSubjects.at(4)));
-    planLeadings.push_back(Leadings(planInstructors.at(4),LAB,planSubjects.at(4)));
-    planLeadings.push_back(Leadings(planInstructors.at(5),LEC,planSubjects.at(4)));
-}
-void initializeInstructors(){
-    planInstructors.push_back(Instructors(("Adam;Jagiello;Prof.Dr.Hab;90")));
-    planInstructors.push_back(Instructors(("Irenuesz;Chrabaszcz;Dr.Hab;80")));
-    planInstructors.push_back(Instructors(("Mieczyslaw;Drabowski;Dr.Hab;80")));
-    planInstructors.push_back(Instructors(("Janusz;Piekosz;Dr.Hab;80")));
-    planInstructors.push_back(Instructors(("Sylwia;Dudek;Dr;99")));
-    planInstructors.push_back(Instructors(("Damian;Grela;Dr;85")));
-    planInstructors.push_back(Instructors(("Marcin;Pawlik;Dr;85")));
-}
+
 void initializeData(){
     initializeHours();
     initializeWeekDays();
-    initializeInstructors();
-    initializeRooms();
-    initializeGroups();
-    initializeSubjects();
-    initializeLeadings();
+    initializeEvery("Database/instructors.txt",0);
+    initializeEvery("Database/rooms.txt",1);
+    initializeEvery("Database/groups.txt",2);
+    initializeEvery("Database/leadings.txt",3);
+    initializeEvery("Database/subjects.txt",4);
 }
 
 

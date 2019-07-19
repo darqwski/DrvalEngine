@@ -39,7 +39,6 @@ const vector<Subjects> &Plan::getSubjects() const {
 void Plan::setSubjects(const vector<Subjects> &subjects) {
     Plan::subjects = subjects;
 }
-
 Plan::Plan(const vector<Rooms> &rooms, const vector<Hours> &hours, const vector<Instructors> &instructors,
            const vector<Subjects> &subjects, const vector<string> &weekDays, const vector<Groups> &groups,const vector<Leadings> &leadings) {
     this->rooms=rooms;
@@ -50,7 +49,26 @@ Plan::Plan(const vector<Rooms> &rooms, const vector<Hours> &hours, const vector<
     this->leadings=leadings;
     setGroups(groups);
     planMatrix=generatePlanMatrix(weekDays,hours,rooms);
+    vector<Occurences>occurences=generateOccurences();
+    for(int i=0;i<leadings.size();i++){
+        for(int j=0;j<instructors.size();j++){
+            if(instructors.at(j).getId()==leadings.at(i).getInstructorId()){
+                this->leadings.at(i).setInstructor(instructors.at(j));
+                break;
+            }
+        }
+        for(int j=0;j<subjects.size();j++){
+            if(subjects.at(j).getSubjectId()==leadings.at(i).getSubjectId()){
+                this->leadings.at(i).setSubject(subjects.at(j));
+                break;
+            }
+        }
+    }
+    fillPlanMatrix(occurences);
+}
+vector<Occurences> Plan::generateOccurences(){
     vector<Occurences>occurences;
+
     for(int i=0;i<subjects.size();i++){
         for(int j=0;j<(subjects.at(i)).getLectures()/WEEKINTERM;j++){
             for(int k=0;k<groups.size();k++)
@@ -78,7 +96,7 @@ Plan::Plan(const vector<Rooms> &rooms, const vector<Hours> &hours, const vector<
                     occurences.push_back(Occurences(groups.at(k),subjects.at(i),PRO));
         }
     }
-    fillPlanMatrix(occurences);
+    return occurences;
 }
 
 void Plan::showPlan() {
@@ -209,7 +227,8 @@ void Plan::fillPlanMatrix(vector<Occurences> occurences) {
                         break;
                 }
                 //planMatrix.at(j).setShortSign(planMatrix.at(j).getShortSign()+leadings.at(availableLeadingIndex).getInstructor().getName().at(0));
-                planMatrix.at(j).setShortSign(planMatrix.at(j).getShortSign()+planMatrix.at(j).getLeading().getInstructor().getName().at(0));
+                planMatrix.at(j).setShortSign(planMatrix.at(j)
+                .getShortSign());
                 break;
             }
             if(j-1==planMatrix.size()){
