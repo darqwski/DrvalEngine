@@ -78,7 +78,7 @@ Occurences::Occurences(const Rooms &room, const Hours &hour, int weekDay){
     setShortSign("O");
 }
 
-Occurences::Occurences(const Groups &group, const Subjects &subject, SubjectType subjectType) {
+Occurences::Occurences(const Groups group, const Subjects subject, SubjectType subjectType) {
     setGroup(group);
     setSubject(subject);
     setSubjectType(subjectType);
@@ -92,4 +92,14 @@ const string &Occurences::getShortSign() const {
 
 void Occurences::setShortSign(const string &shortSign) {
     Occurences::shortSign = shortSign;
+}
+string Occurences::getCsvLine(){
+    string mainLine="";
+    mainLine+=leading.getSubjectId()+";"+leading.getInstructorId()+";";
+    mainLine+=group.getName()+";";
+    mainLine+=room.getNumber()+";";
+    mainLine+=getSubjectTypeString(subjectType)+";";
+    mainLine+=hour.getText()+";";
+    mainLine+=to_string(getWeekDay());
+    return mainLine;
 }

@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DrvalEngine.dir/Utilities/DrvalUtilities.cpp.o"
   "CMakeFiles/DrvalEngine.dir/Model/Occurences.cpp.o"
   "CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.o"
+  "CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.o"
   "DrvalEngine.pdb"
   "DrvalEngine"
 )

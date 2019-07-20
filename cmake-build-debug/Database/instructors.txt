@@ -1,6 +1,7 @@
 ajagiello;Adam;Jagiello;Prof.Dr.Hab;90
 jstrug;Joanna;Strug;Dr.;90
 ichrabasz;Irenuesz;Chrabaszcz;Dr.Hab;90
+mdrabowski;Mieczyslaw;Drabowski;Dr.Hab;80
 sdudek;Sylwia;Dudek;Dr;90
 jpiekosz;Janusz;Piekosz;Dr.;90
 ikuzminska;Iwona;Kuzminska;Mgr;90
@@ -10,3 +11,5 @@ pkrol;Pawel;Krol;mgr;90
 aszromba;Andrzej;Szromba;Dr;90
 zaba;Damian;Zaba;Dr;90
 wjakubas;Wieslaw;Jakubas;Dr;90
+kshiff;Krzysztof;Shiff;Dr;30
+mysza;M;Mysinski;Dr;60

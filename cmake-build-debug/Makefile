@@ -298,6 +298,33 @@ Model/Plan.cpp.s:
 	$(MAKE) -f CMakeFiles/DrvalEngine.dir/build.make CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.s
 .PHONY : Model/Plan.cpp.s
 
+Model/RoomSubject.o: Model/RoomSubject.cpp.o
+
+.PHONY : Model/RoomSubject.o
+
+# target to build an object file
+Model/RoomSubject.cpp.o:
+	$(MAKE) -f CMakeFiles/DrvalEngine.dir/build.make CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.o
+.PHONY : Model/RoomSubject.cpp.o
+
+Model/RoomSubject.i: Model/RoomSubject.cpp.i
+
+.PHONY : Model/RoomSubject.i
+
+# target to preprocess a source file
+Model/RoomSubject.cpp.i:
+	$(MAKE) -f CMakeFiles/DrvalEngine.dir/build.make CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.i
+.PHONY : Model/RoomSubject.cpp.i
+
+Model/RoomSubject.s: Model/RoomSubject.cpp.s
+
+.PHONY : Model/RoomSubject.s
+
+# target to generate assembly for a file
+Model/RoomSubject.cpp.s:
+	$(MAKE) -f CMakeFiles/DrvalEngine.dir/build.make CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.s
+.PHONY : Model/RoomSubject.cpp.s
+
 Model/Rooms.o: Model/Rooms.cpp.o
 
 .PHONY : Model/Rooms.o
@@ -464,6 +491,9 @@ help:
 	@echo "... Model/Plan.o"
 	@echo "... Model/Plan.i"
 	@echo "... Model/Plan.s"
+	@echo "... Model/RoomSubject.o"
+	@echo "... Model/RoomSubject.i"
+	@echo "... Model/RoomSubject.s"
 	@echo "... Model/Rooms.o"
 	@echo "... Model/Rooms.i"
 	@echo "... Model/Rooms.s"

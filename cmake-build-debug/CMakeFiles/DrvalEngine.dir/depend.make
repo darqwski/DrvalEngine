@@ -21,6 +21,7 @@ CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.o: ../Model/Leadings.cpp
 CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.o: ../Model/Leadings.h
 CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.o: ../Model/Occurences.h
 CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.o: ../Model/Plan.h
+CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.o: ../Model/RoomSubject.h
 CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.o: ../Model/Rooms.h
 CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.o: ../Model/Subjects.h
 CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.o: ../Utilities/DrvalUtilities.h
@@ -43,9 +44,15 @@ CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.o: ../Model/Leadings.h
 CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.o: ../Model/Occurences.h
 CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.o: ../Model/Plan.cpp
 CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.o: ../Model/Plan.h
+CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.o: ../Model/RoomSubject.h
 CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.o: ../Model/Rooms.h
 CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.o: ../Model/Subjects.h
 CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.o: ../Utilities/DrvalUtilities.h
+
+CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.o: ../Model/RoomSubject.cpp
+CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.o: ../Model/RoomSubject.h
+CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.o: ../Utilities/DrvalUtilities.h
+CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.o: ../Utilities/SuperUtilities.h
 
 CMakeFiles/DrvalEngine.dir/Model/Rooms.cpp.o: ../Model/Rooms.cpp
 CMakeFiles/DrvalEngine.dir/Model/Rooms.cpp.o: ../Model/Rooms.h
@@ -68,6 +75,7 @@ CMakeFiles/DrvalEngine.dir/main.cpp.o: ../Model/Instructors.h
 CMakeFiles/DrvalEngine.dir/main.cpp.o: ../Model/Leadings.h
 CMakeFiles/DrvalEngine.dir/main.cpp.o: ../Model/Occurences.h
 CMakeFiles/DrvalEngine.dir/main.cpp.o: ../Model/Plan.h
+CMakeFiles/DrvalEngine.dir/main.cpp.o: ../Model/RoomSubject.h
 CMakeFiles/DrvalEngine.dir/main.cpp.o: ../Model/Rooms.h
 CMakeFiles/DrvalEngine.dir/main.cpp.o: ../Model/Subjects.h
 CMakeFiles/DrvalEngine.dir/main.cpp.o: ../Utilities/DrvalUtilities.h

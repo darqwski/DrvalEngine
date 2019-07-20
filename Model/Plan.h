@@ -12,6 +12,7 @@
 #include "Instructors.h"
 #include "Subjects.h"
 #include "Occurences.h"
+#include "RoomSubject.h"
 
 using namespace std;
 class Plan {
@@ -23,7 +24,12 @@ class Plan {
     vector<Occurences> planMatrix;
     vector<Groups>groups;
     vector<Leadings>leadings;
-    ;
+    vector<RoomSubject> roomSubjects;
+public:
+    const vector<RoomSubject> &getRoomSubjects() const;
+
+    void setRoomSubjects(const vector<RoomSubject> &roomSubjects);
+
 public:
     const vector<Groups> &getGroups() const;
 
@@ -31,7 +37,8 @@ public:
 
 public:
     Plan(const vector<Rooms> &rooms, const vector<Hours> &hours, const vector<Instructors> &instructors,
-         const vector<Subjects> &subjects, const vector<string> &weekDays,const vector<Groups> &groups,const vector<Leadings> &leadings);
+         const vector<Subjects> &subjects, const vector<string> &weekDays,const vector<Groups> &groups,
+         const vector<Leadings> &leadings,const vector<RoomSubject> &roomSubjects);
 
 public:
     Plan(const vector<Rooms> &rooms, const vector<Hours> &hours, const vector<Instructors> &instructors,
@@ -73,6 +80,12 @@ public:
     bool isInstructorFreeAtHour(Instructors instructor, int hour, int day);
 
     vector<Occurences> generateOccurences();
+
+    bool occucerenceMayBeInRoom(Occurences &plan, Occurences &occurence);
+
+    void generatePlan();
+
+    bool saveToFile(string address);
 };
 
 

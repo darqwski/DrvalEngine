@@ -1,6 +1,13 @@
 i1mat;Matematyka;Informatyka;1;30;30;0;0;0
 i1fiz;Fizyka;Informatyka;1;30;30;0;0;0
 i1wstep;WstepneProgramowanie;Informatyka;1;30;0;0;30;0
+i1zsizi;ZagadnieniaSpoleczneIZawodowe;Informatyka;1;30;30;0;0;0
 i1ang;Angielski;Informatyka;1;0;30;0;0;0
 i1wf;WF;Informatyka;1;0;30;0;0;0
-e1mat;Matematyka;Elektrotechnika;1;30;30;0;0;0
+i2stat;Statystyka;Informatyka;2;30;0;0;30;0
+i2mim;Mikrokontrolery;Informatyka;2;30;0;30;0;0
+i2so;SystemyOperacyjne;Informatyka;2;30;0;0;30;0
+i2ang;Angielski;Informatyka;2;0;30;0;0;0
+i2graf;GrafikaKomputerowa;Informatyka;2;30;0;0;30;30
+i2asisd;AlgorytmyIStrugturyDanych;Informatyka;2;30;0;0;30;0
+e1mat;Matematyka;Elektrotechnika;1;30;30;0;30;0

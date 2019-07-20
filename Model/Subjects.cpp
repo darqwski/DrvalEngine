@@ -76,8 +76,8 @@ Subjects::Subjects(string csvLine) {
     setStudyField(items.at(2));
     setYear(stoi(items.at(3)));
     setLectures(stoi(items.at(4)));
-    setLaboratories(stoi(items.at(5)));
-    setExercises(stoi(items.at(6)));
+    setExercises(stoi(items.at(5)));
+    setLaboratories(stoi(items.at(6)));
     setComputers(stoi(items.at(7)));
     setProjects(stoi(items.at(8)));
 

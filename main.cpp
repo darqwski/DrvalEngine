@@ -8,6 +8,7 @@
 #include "Model/Rooms.h"
 #include "Model/Hours.h"
 #include "Model/Plan.h"
+#include "Model/RoomSubject.h"
 
 vector<Hours>definedHours;
 vector<string>weekDays;
@@ -16,6 +17,7 @@ vector<Groups>planGroups;
 vector<Subjects>planSubjects;
 vector<Rooms>planRooms;
 vector<Leadings>planLeadings;
+vector<RoomSubject>planRoomSubjects;
 enum HourType {EARLY = 0, MIDDAY = 1, AFTERNOON =2 , EVENING = 3};
 enum WeekDaysString {MONDAY,TUESDAY,W};
 void initializeHours(){
@@ -37,36 +39,6 @@ void initializeWeekDays(){
     weekDays.push_back("Friday");
 }
 
-void initializeRooms(){
-    planRooms.push_back(Rooms("A1;LEC;EXE"));
-    planRooms.push_back(Rooms("A2;LEC;EXE"));
-    planRooms.push_back(Rooms("A3;LEC;EXE"));
-    planRooms.push_back(Rooms("A4;LEC;EXE"));
-    planRooms.push_back(Rooms("10;EXE"));
-    planRooms.push_back(Rooms("11;EXE"));
-    planRooms.push_back(Rooms("18;CMP"));
-    planRooms.push_back(Rooms("8;LAB"));
-    planRooms.push_back(Rooms("9;LAB"));
-}
-void initializeGroups(){
-    planGroups.push_back(Groups(("1i;1;Informatyka;LEC")));
-    planGroups.push_back(Groups(("11i;1;Informatyka;EXE")));
-    planGroups.push_back(Groups(("12i;1;Informatyka;EXE")));
-    planGroups.push_back(Groups(("13i;1;Informatyka;EXE")));
-    planGroups.push_back(Groups(("1lab1i;1;Informatyka;LAB")));
-    planGroups.push_back(Groups(("2lab1i;1;Informatyka;LAB")));
-    planGroups.push_back(Groups(("3lab1i;1;Informatyka;LAB")));
-    planGroups.push_back(Groups(("4lab1i;1;Informatyka;LAB")));
-    planGroups.push_back(Groups(("5lab1i;1;Informatyka;LAB")));
-    planGroups.push_back(Groups(("1lab1i;1;Informatyka;CMP")));
-    planGroups.push_back(Groups(("2lab1i;1;Informatyka;CMP")));
-    planGroups.push_back(Groups(("3lab1i;1;Informatyka;CMP")));
-    planGroups.push_back(Groups(("4lab1i;1;Informatyka;CMP")));
-    planGroups.push_back(Groups(("5lab1i;1;Informatyka;CMP")));
-
-    planGroups.push_back(Groups(("1i;1;Elektrotechnika;LEC")));
-    planGroups.push_back(Groups(("11i;1;Elektrotechnika;EXE")));
-}
 void initializeEvery(string address,const int type){
     ifstream file(address);
     if (file.is_open()) {
@@ -88,10 +60,16 @@ void initializeEvery(string address,const int type){
                 case 4:
                     planSubjects.push_back(Subjects((line)));
                     break;
+                case 5:
+                    planRoomSubjects.push_back(RoomSubject((line)));
+                    break;
 
             }
         }
         file.close();
+    }
+    else{
+        cout<<"File is unable to open";
     }
 }
 
@@ -103,14 +81,16 @@ void initializeData(){
     initializeEvery("Database/groups.txt",2);
     initializeEvery("Database/leadings.txt",3);
     initializeEvery("Database/subjects.txt",4);
+    initializeEvery("Database/roomSubject.txt",5);
 }
 
 
 using namespace std;
 int main() {
     initializeData();
-    Plan mainPlan(planRooms,definedHours,planInstructors,planSubjects,weekDays,planGroups,planLeadings);
+    Plan mainPlan(planRooms,definedHours,planInstructors,planSubjects,weekDays,planGroups,planLeadings,planRoomSubjects);
+    mainPlan.generatePlan();
     mainPlan.showPlan();
-
+    mainPlan.saveToFile("Database/results.txt");
     return 0;
 }

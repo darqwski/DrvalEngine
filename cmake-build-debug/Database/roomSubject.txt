@@ -1,0 +1,4 @@
+i1ang;JEZ;EXE
+i2ang;JEZ;EXE
+i1wf;HAL;EXE
+i2mim;HSE;LAB

@@ -166,6 +166,12 @@
 		<Unit filename="/Users/generalautomatic/Desktop/DrvalEngine/Model/Plan.h">
 			<Option target="DrvalEngine"/>
 		</Unit>
+		<Unit filename="/Users/generalautomatic/Desktop/DrvalEngine/Model/RoomSubject.cpp">
+			<Option target="DrvalEngine"/>
+		</Unit>
+		<Unit filename="/Users/generalautomatic/Desktop/DrvalEngine/Model/RoomSubject.h">
+			<Option target="DrvalEngine"/>
+		</Unit>
 		<Unit filename="/Users/generalautomatic/Desktop/DrvalEngine/Model/Rooms.cpp">
 			<Option target="DrvalEngine"/>
 		</Unit>

@@ -4,7 +4,10 @@
 
 #include <iostream>
 #include "Plan.h"
+#include "Occurences.h"
 #include <vector>
+#include <fstream>
+#include "../Utilities/DrvalUtilities.h"
 const int minWeekDayLength=9;
 
 using namespace std;
@@ -40,7 +43,8 @@ void Plan::setSubjects(const vector<Subjects> &subjects) {
     Plan::subjects = subjects;
 }
 Plan::Plan(const vector<Rooms> &rooms, const vector<Hours> &hours, const vector<Instructors> &instructors,
-           const vector<Subjects> &subjects, const vector<string> &weekDays, const vector<Groups> &groups,const vector<Leadings> &leadings) {
+           const vector<Subjects> &subjects, const vector<string> &weekDays, const vector<Groups> &groups,
+           const vector<Leadings> &leadings, const vector<RoomSubject> &roomSubjects) {
     this->rooms=rooms;
     this->subjects=subjects;
     this->hours=hours;
@@ -48,7 +52,10 @@ Plan::Plan(const vector<Rooms> &rooms, const vector<Hours> &hours, const vector<
     this->weekDays=weekDays;
     this->leadings=leadings;
     setGroups(groups);
+    setRoomSubjects(roomSubjects);
     planMatrix=generatePlanMatrix(weekDays,hours,rooms);
+}
+void Plan::generatePlan(){
     vector<Occurences>occurences=generateOccurences();
     for(int i=0;i<leadings.size();i++){
         for(int j=0;j<instructors.size();j++){
@@ -78,7 +85,7 @@ vector<Occurences> Plan::generateOccurences(){
         for(int j=0;j<(subjects.at(i)).getExercises()/WEEKINTERM;j++){
             for(int k=0;k<groups.size();k++)
                 if(groups.at(k).getGroupType()==EXE&& subjects.at(i).getYear()==groups.at(k).getYear() && subjects.at(i).getStudyField() == groups.at(k).getStudyField())
-                    occurences.push_back(Occurences(groups.at(k),subjects.at(i),EXE));
+                    occurences.push_back(Occurences(groups[k],subjects[i],EXE));
         }
         for(int j=0;j<(subjects.at(i)).getLaboratories()/WEEKINTERM;j++){
             for(int k=0;k<groups.size();k++)
@@ -198,10 +205,12 @@ void Plan::fillPlanMatrix(vector<Occurences> occurences) {
     for(int i=0;i<occurences.size();i++){
         for(int j=0;j<planMatrix.size();j++){
             int availableLeadingIndex = availableInstructor(planMatrix.at(j),occurences.at(i));
-            if(planMatrix.at(j).getRoom().getMainType()==occurences.at(i).getSubjectType()
+            if(
+                    occucerenceMayBeInRoom(planMatrix.at(j),occurences.at(i))
                 &&planMatrix.at(j).isFree()
                 &&anotherGroupHasClasses(planMatrix.at(j),occurences.at(i))
                 &&availableLeadingIndex != -1){
+
                 planMatrix.at(j).setGroup(occurences.at(i).getGroup());
                 planMatrix.at(j).setSubject(occurences.at(i).getSubject());
                 planMatrix.at(j).setLeading(leadings.at(availableLeadingIndex));
@@ -227,12 +236,11 @@ void Plan::fillPlanMatrix(vector<Occurences> occurences) {
                         break;
                 }
                 //planMatrix.at(j).setShortSign(planMatrix.at(j).getShortSign()+leadings.at(availableLeadingIndex).getInstructor().getName().at(0));
-                planMatrix.at(j).setShortSign(planMatrix.at(j)
-                .getShortSign());
                 break;
             }
-            if(j-1==planMatrix.size()){
-                cout<<"Nie ma możliwości dodania "<<occurences.at(i).getGroup().getStudyField()<<" "<<(occurences.at(i)).getGroup().getName()<<" "<<occurences.at(i).getSubject().getName()<<endl;
+            if((j-1)==planMatrix.size()){
+                cout<<"Nie ma możliwości dodania "<<occurences.at(i).getGroup().getStudyField()<<" "
+                <<(occurences.at(i)).getGroup().getName()<<" "<<occurences.at(i).getSubject().getName()<<endl;
             }
         }
 
@@ -248,7 +256,7 @@ int Plan::availableInstructor(Occurences plan, Occurences occurence){
         }
     }
     for(int i=0;i<leadings.size();i++){
-        if((leadings.at(i)).getSubject()==occurence.getSubject() && leadings.at(i).getType()==occurence.getGroup().getGroupType()){
+        if((leadings.at(i)).getSubject().getSubjectId()==occurence.getSubject().getSubjectId() && leadings.at(i).getType()==occurence.getSubjectType()){
             bool isFree=isInstructorFreeAtHour(leadings.at(i).getInstructor(),plan.getWeekDay(),hourNumber);
             if(isFree){
                 return i;
@@ -259,10 +267,8 @@ int Plan::availableInstructor(Occurences plan, Occurences occurence){
 }
 bool Plan::isInstructorFreeAtHour(Instructors instructor, int day,int hour){
     for(int i=0;i<rooms.size();i++){
-        /** TODO  Wyglada jakby wyszukiwanie bylo zle*/
         if((planMatrix.at(getRoomDayHourAddress(i,day,hour))).getLeading().getInstructor()==instructor){
             return false;
-
         }
     }
     return true;
@@ -277,7 +283,6 @@ bool Plan::anotherGroupHasClasses(Occurences plan, Occurences occurence){
         }
         for(int j=0;j<rooms.size();j++){
             Groups currGroup=planMatrix.at(getRoomDayHourAddress(j,plan.getWeekDay(),hourNumber)).getGroup();
-
             if((currGroup.getGroupType()!=occurence.getGroup().getGroupType()&&currGroup.getGroupType()!=UNKNOWN) ||
                 (currGroup == occurence.getGroup())) {
                   return false;
@@ -285,4 +290,36 @@ bool Plan::anotherGroupHasClasses(Occurences plan, Occurences occurence){
         }
     }
     return true;
+}
+
+bool Plan::occucerenceMayBeInRoom(Occurences &plan, Occurences &occurence) {
+    for(int i=0;i<roomSubjects.size();i++){
+        if(roomSubjects[i].getSubjectId() == occurence.getSubject().getSubjectId()){
+              if(roomSubjects[i].getRoomSubjectType()==occurence.getSubjectType()){
+                return plan.getRoom().getNumber()== roomSubjects[i].getRoomNumber();
+            }
+        }
+
+    }
+    return plan.getRoom().getMainType()==occurence.getSubjectType();
+}
+
+bool Plan::saveToFile(string address){
+    ofstream file(address);
+    if (file.is_open()) {
+        for(int i=0;i<planMatrix.size();i++){
+            if(!planMatrix[i].isFree())file<<planMatrix[i].getCsvLine()<<endl;
+        }
+    }
+    file.close();
+    return true;
+
+}
+
+const vector<RoomSubject> &Plan::getRoomSubjects() const {
+    return roomSubjects;
+}
+
+void Plan::setRoomSubjects(const vector<RoomSubject> &roomSubjects) {
+    Plan::roomSubjects = roomSubjects;
 }

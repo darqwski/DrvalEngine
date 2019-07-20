@@ -52,23 +52,24 @@ private:
     Subjects subject;
     SubjectType subjectType;
     string shortSign;
+    int weekDay;
+    bool free;
 public:
     const string &getShortSign() const;
 
     void setShortSign(const string &shortSign);
 
 private:
-    int weekDay;
-    bool free;
 public:
     Occurences(const Rooms &room, const Hours &hour, int weekDay);
 
-    Occurences(const Groups &group, const Subjects &subject, SubjectType subjectType);
+    Occurences(const Groups group, const Subjects subject, SubjectType subjectType);
 
     bool isFree() const;
 
     void setFree(bool isFree);
 
+    string getCsvLine();
 };
 
 
