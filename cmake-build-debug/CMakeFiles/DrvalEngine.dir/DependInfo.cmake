@@ -4,20 +4,20 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/generalautomatic/Desktop/DrvalEngine/Model/Groups.cpp" "/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/Groups.cpp.o"
-  "/Users/generalautomatic/Desktop/DrvalEngine/Model/Hours.cpp" "/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/Hours.cpp.o"
-  "/Users/generalautomatic/Desktop/DrvalEngine/Model/Instructors.cpp" "/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/Instructors.cpp.o"
-  "/Users/generalautomatic/Desktop/DrvalEngine/Model/Leadings.cpp" "/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.o"
-  "/Users/generalautomatic/Desktop/DrvalEngine/Model/Occurences.cpp" "/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/Occurences.cpp.o"
-  "/Users/generalautomatic/Desktop/DrvalEngine/Model/Plan.cpp" "/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.o"
-  "/Users/generalautomatic/Desktop/DrvalEngine/Model/RoomSubject.cpp" "/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.o"
-  "/Users/generalautomatic/Desktop/DrvalEngine/Model/Rooms.cpp" "/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/Rooms.cpp.o"
-  "/Users/generalautomatic/Desktop/DrvalEngine/Model/Subjects.cpp" "/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/Subjects.cpp.o"
-  "/Users/generalautomatic/Desktop/DrvalEngine/Utilities/DrvalUtilities.cpp" "/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Utilities/DrvalUtilities.cpp.o"
-  "/Users/generalautomatic/Desktop/DrvalEngine/Utilities/SuperUtilities.cpp" "/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Utilities/SuperUtilities.cpp.o"
-  "/Users/generalautomatic/Desktop/DrvalEngine/main.cpp" "/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/main.cpp.o"
+  "C:/Users/gic3k/Desktop/DrvalEngine/Model/Groups.cpp" "C:/Users/gic3k/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/Groups.cpp.obj"
+  "C:/Users/gic3k/Desktop/DrvalEngine/Model/Hours.cpp" "C:/Users/gic3k/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/Hours.cpp.obj"
+  "C:/Users/gic3k/Desktop/DrvalEngine/Model/Instructors.cpp" "C:/Users/gic3k/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/Instructors.cpp.obj"
+  "C:/Users/gic3k/Desktop/DrvalEngine/Model/Leadings.cpp" "C:/Users/gic3k/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.obj"
+  "C:/Users/gic3k/Desktop/DrvalEngine/Model/Occurences.cpp" "C:/Users/gic3k/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/Occurences.cpp.obj"
+  "C:/Users/gic3k/Desktop/DrvalEngine/Model/Plan.cpp" "C:/Users/gic3k/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.obj"
+  "C:/Users/gic3k/Desktop/DrvalEngine/Model/RoomSubject.cpp" "C:/Users/gic3k/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.obj"
+  "C:/Users/gic3k/Desktop/DrvalEngine/Model/Rooms.cpp" "C:/Users/gic3k/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/Rooms.cpp.obj"
+  "C:/Users/gic3k/Desktop/DrvalEngine/Model/Subjects.cpp" "C:/Users/gic3k/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Model/Subjects.cpp.obj"
+  "C:/Users/gic3k/Desktop/DrvalEngine/Utilities/DrvalUtilities.cpp" "C:/Users/gic3k/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Utilities/DrvalUtilities.cpp.obj"
+  "C:/Users/gic3k/Desktop/DrvalEngine/Utilities/SuperUtilities.cpp" "C:/Users/gic3k/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/Utilities/SuperUtilities.cpp.obj"
+  "C:/Users/gic3k/Desktop/DrvalEngine/main.cpp" "C:/Users/gic3k/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles/DrvalEngine.dir/main.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
