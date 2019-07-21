@@ -60,158 +60,158 @@ include CMakeFiles/DrvalEngine.dir/flags.make
 CMakeFiles/DrvalEngine.dir/main.cpp.o: CMakeFiles/DrvalEngine.dir/flags.make
 CMakeFiles/DrvalEngine.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DrvalEngine.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/main.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/main.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/main.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/main.cpp
 
 CMakeFiles/DrvalEngine.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DrvalEngine.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/main.cpp > CMakeFiles/DrvalEngine.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/main.cpp > CMakeFiles/DrvalEngine.dir/main.cpp.i
 
 CMakeFiles/DrvalEngine.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DrvalEngine.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/main.cpp -o CMakeFiles/DrvalEngine.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/main.cpp -o CMakeFiles/DrvalEngine.dir/main.cpp.s
 
 CMakeFiles/DrvalEngine.dir/Model/Instructors.cpp.o: CMakeFiles/DrvalEngine.dir/flags.make
 CMakeFiles/DrvalEngine.dir/Model/Instructors.cpp.o: ../Model/Instructors.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DrvalEngine.dir/Model/Instructors.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/Instructors.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/Instructors.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/Instructors.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/Instructors.cpp
 
 CMakeFiles/DrvalEngine.dir/Model/Instructors.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DrvalEngine.dir/Model/Instructors.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/Instructors.cpp > CMakeFiles/DrvalEngine.dir/Model/Instructors.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/Instructors.cpp > CMakeFiles/DrvalEngine.dir/Model/Instructors.cpp.i
 
 CMakeFiles/DrvalEngine.dir/Model/Instructors.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DrvalEngine.dir/Model/Instructors.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/Instructors.cpp -o CMakeFiles/DrvalEngine.dir/Model/Instructors.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/Instructors.cpp -o CMakeFiles/DrvalEngine.dir/Model/Instructors.cpp.s
 
 CMakeFiles/DrvalEngine.dir/Utilities/SuperUtilities.cpp.o: CMakeFiles/DrvalEngine.dir/flags.make
 CMakeFiles/DrvalEngine.dir/Utilities/SuperUtilities.cpp.o: ../Utilities/SuperUtilities.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DrvalEngine.dir/Utilities/SuperUtilities.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Utilities/SuperUtilities.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Utilities/SuperUtilities.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Utilities/SuperUtilities.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Utilities/SuperUtilities.cpp
 
 CMakeFiles/DrvalEngine.dir/Utilities/SuperUtilities.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DrvalEngine.dir/Utilities/SuperUtilities.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Utilities/SuperUtilities.cpp > CMakeFiles/DrvalEngine.dir/Utilities/SuperUtilities.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Utilities/SuperUtilities.cpp > CMakeFiles/DrvalEngine.dir/Utilities/SuperUtilities.cpp.i
 
 CMakeFiles/DrvalEngine.dir/Utilities/SuperUtilities.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DrvalEngine.dir/Utilities/SuperUtilities.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Utilities/SuperUtilities.cpp -o CMakeFiles/DrvalEngine.dir/Utilities/SuperUtilities.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Utilities/SuperUtilities.cpp -o CMakeFiles/DrvalEngine.dir/Utilities/SuperUtilities.cpp.s
 
 CMakeFiles/DrvalEngine.dir/Model/Rooms.cpp.o: CMakeFiles/DrvalEngine.dir/flags.make
 CMakeFiles/DrvalEngine.dir/Model/Rooms.cpp.o: ../Model/Rooms.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DrvalEngine.dir/Model/Rooms.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/Rooms.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/Rooms.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/Rooms.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/Rooms.cpp
 
 CMakeFiles/DrvalEngine.dir/Model/Rooms.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DrvalEngine.dir/Model/Rooms.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/Rooms.cpp > CMakeFiles/DrvalEngine.dir/Model/Rooms.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/Rooms.cpp > CMakeFiles/DrvalEngine.dir/Model/Rooms.cpp.i
 
 CMakeFiles/DrvalEngine.dir/Model/Rooms.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DrvalEngine.dir/Model/Rooms.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/Rooms.cpp -o CMakeFiles/DrvalEngine.dir/Model/Rooms.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/Rooms.cpp -o CMakeFiles/DrvalEngine.dir/Model/Rooms.cpp.s
 
 CMakeFiles/DrvalEngine.dir/Model/Groups.cpp.o: CMakeFiles/DrvalEngine.dir/flags.make
 CMakeFiles/DrvalEngine.dir/Model/Groups.cpp.o: ../Model/Groups.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DrvalEngine.dir/Model/Groups.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/Groups.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/Groups.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/Groups.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/Groups.cpp
 
 CMakeFiles/DrvalEngine.dir/Model/Groups.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DrvalEngine.dir/Model/Groups.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/Groups.cpp > CMakeFiles/DrvalEngine.dir/Model/Groups.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/Groups.cpp > CMakeFiles/DrvalEngine.dir/Model/Groups.cpp.i
 
 CMakeFiles/DrvalEngine.dir/Model/Groups.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DrvalEngine.dir/Model/Groups.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/Groups.cpp -o CMakeFiles/DrvalEngine.dir/Model/Groups.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/Groups.cpp -o CMakeFiles/DrvalEngine.dir/Model/Groups.cpp.s
 
 CMakeFiles/DrvalEngine.dir/Model/Subjects.cpp.o: CMakeFiles/DrvalEngine.dir/flags.make
 CMakeFiles/DrvalEngine.dir/Model/Subjects.cpp.o: ../Model/Subjects.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DrvalEngine.dir/Model/Subjects.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/Subjects.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/Subjects.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/Subjects.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/Subjects.cpp
 
 CMakeFiles/DrvalEngine.dir/Model/Subjects.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DrvalEngine.dir/Model/Subjects.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/Subjects.cpp > CMakeFiles/DrvalEngine.dir/Model/Subjects.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/Subjects.cpp > CMakeFiles/DrvalEngine.dir/Model/Subjects.cpp.i
 
 CMakeFiles/DrvalEngine.dir/Model/Subjects.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DrvalEngine.dir/Model/Subjects.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/Subjects.cpp -o CMakeFiles/DrvalEngine.dir/Model/Subjects.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/Subjects.cpp -o CMakeFiles/DrvalEngine.dir/Model/Subjects.cpp.s
 
 CMakeFiles/DrvalEngine.dir/Model/Hours.cpp.o: CMakeFiles/DrvalEngine.dir/flags.make
 CMakeFiles/DrvalEngine.dir/Model/Hours.cpp.o: ../Model/Hours.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DrvalEngine.dir/Model/Hours.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/Hours.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/Hours.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/Hours.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/Hours.cpp
 
 CMakeFiles/DrvalEngine.dir/Model/Hours.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DrvalEngine.dir/Model/Hours.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/Hours.cpp > CMakeFiles/DrvalEngine.dir/Model/Hours.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/Hours.cpp > CMakeFiles/DrvalEngine.dir/Model/Hours.cpp.i
 
 CMakeFiles/DrvalEngine.dir/Model/Hours.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DrvalEngine.dir/Model/Hours.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/Hours.cpp -o CMakeFiles/DrvalEngine.dir/Model/Hours.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/Hours.cpp -o CMakeFiles/DrvalEngine.dir/Model/Hours.cpp.s
 
 CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.o: CMakeFiles/DrvalEngine.dir/flags.make
 CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.o: ../Model/Plan.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/Plan.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/Plan.cpp
 
 CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/Plan.cpp > CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/Plan.cpp > CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.i
 
 CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/Plan.cpp -o CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/Plan.cpp -o CMakeFiles/DrvalEngine.dir/Model/Plan.cpp.s
 
 CMakeFiles/DrvalEngine.dir/Utilities/DrvalUtilities.cpp.o: CMakeFiles/DrvalEngine.dir/flags.make
 CMakeFiles/DrvalEngine.dir/Utilities/DrvalUtilities.cpp.o: ../Utilities/DrvalUtilities.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/DrvalEngine.dir/Utilities/DrvalUtilities.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Utilities/DrvalUtilities.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Utilities/DrvalUtilities.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Utilities/DrvalUtilities.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Utilities/DrvalUtilities.cpp
 
 CMakeFiles/DrvalEngine.dir/Utilities/DrvalUtilities.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DrvalEngine.dir/Utilities/DrvalUtilities.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Utilities/DrvalUtilities.cpp > CMakeFiles/DrvalEngine.dir/Utilities/DrvalUtilities.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Utilities/DrvalUtilities.cpp > CMakeFiles/DrvalEngine.dir/Utilities/DrvalUtilities.cpp.i
 
 CMakeFiles/DrvalEngine.dir/Utilities/DrvalUtilities.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DrvalEngine.dir/Utilities/DrvalUtilities.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Utilities/DrvalUtilities.cpp -o CMakeFiles/DrvalEngine.dir/Utilities/DrvalUtilities.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Utilities/DrvalUtilities.cpp -o CMakeFiles/DrvalEngine.dir/Utilities/DrvalUtilities.cpp.s
 
 CMakeFiles/DrvalEngine.dir/Model/Occurences.cpp.o: CMakeFiles/DrvalEngine.dir/flags.make
 CMakeFiles/DrvalEngine.dir/Model/Occurences.cpp.o: ../Model/Occurences.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/DrvalEngine.dir/Model/Occurences.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/Occurences.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/Occurences.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/Occurences.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/Occurences.cpp
 
 CMakeFiles/DrvalEngine.dir/Model/Occurences.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DrvalEngine.dir/Model/Occurences.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/Occurences.cpp > CMakeFiles/DrvalEngine.dir/Model/Occurences.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/Occurences.cpp > CMakeFiles/DrvalEngine.dir/Model/Occurences.cpp.i
 
 CMakeFiles/DrvalEngine.dir/Model/Occurences.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DrvalEngine.dir/Model/Occurences.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/Occurences.cpp -o CMakeFiles/DrvalEngine.dir/Model/Occurences.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/Occurences.cpp -o CMakeFiles/DrvalEngine.dir/Model/Occurences.cpp.s
 
 CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.o: CMakeFiles/DrvalEngine.dir/flags.make
 CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.o: ../Model/Leadings.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/Leadings.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/Leadings.cpp
 
 CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/Leadings.cpp > CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/Leadings.cpp > CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.i
 
 CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/Leadings.cpp -o CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/Leadings.cpp -o CMakeFiles/DrvalEngine.dir/Model/Leadings.cpp.s
 
 CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.o: CMakeFiles/DrvalEngine.dir/flags.make
 CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.o: ../Model/RoomSubject.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/generalautomatic/Desktop/DrvalEngine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/RoomSubject.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.o -c /Users/generalautomatic/Desktop/DrvalEngine/Model/RoomSubject.cpp
 
 CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/RoomSubject.cpp > CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/generalautomatic/Desktop/DrvalEngine/Model/RoomSubject.cpp > CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.i
 
 CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/RoomSubject.cpp -o CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/generalautomatic/Desktop/DrvalEngine/Model/RoomSubject.cpp -o CMakeFiles/DrvalEngine.dir/Model/RoomSubject.cpp.s
 
 # Object files for target DrvalEngine
 DrvalEngine_OBJECTS = \
